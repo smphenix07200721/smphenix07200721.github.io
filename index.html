@@ -52,6 +52,14 @@
       padding: 30px;
     }
 
+    .menu{
+  display:flex;
+  flex-wrap:wrap;
+  justify-content:center;
+  gap:15px;
+  margin:30px 0 50px;
+}
+    
     .card {
   background: rgba(88, 28, 135, 0.35);
 
@@ -96,6 +104,16 @@
       transition: 0.3s;
     }
 
+    .special-button{
+  background:#f59e0b;
+  color:white;
+  box-shadow:0 0 20px rgba(245,158,11,0.7);
+}
+
+.special-button:hover{
+  background:#d97706;
+}
+    
     .button:hover {
       background: #2563eb;
     }
@@ -152,10 +170,14 @@
     ソウマの自己紹介サイト
   </footer>
 
-<a href="thanks.html" class="button">私が一番伝えたいこと</a>
-<a href="favorite.html" class="button">好きなもの紹介</a>
-<a href="member.html" class="button">推しグループ紹介</a>
-<a href="idol.html" class="button">推し紹介はこちら‼</a>
-<a href="history.html" class="button">推し活遍歴</a>
+<div class="menu">
+<a href="thanks.html" class="button special-button">
+  私が一番伝えたいこと
+</a>
+  <a href="favorite.html" class="button">好きなもの紹介</a>
+  <a href="member.html" class="button">推しグループ紹介</a>
+  <a href="idol.html" class="button">推し紹介はこちら‼</a>
+  <a href="history.html" class="button">推し活遍歴</a>
+</div>
 </body>
 </html>
