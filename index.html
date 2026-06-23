@@ -3,6 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <div class="menu">
+  <a href="favorite.html" class="button">好きなもの紹介</a>
+  <a href="member.html" class="button">推しグループ紹介</a>
+  <a href="idol.html" class="button">推し紹介はこちら‼</a>
+  <a href="history.html" class="button">推し活遍歴</a>
+</div>
   <title>ソウマの自己紹介サイト</title>
   <style>
     body {
@@ -106,10 +112,13 @@
       transition: 0.3s;
     }
 
-    .special-button{
-  background:#f59e0b;
-  color:white;
-  box-shadow:0 0 20px rgba(245,158,11,0.7);
+   .special-button{
+  display:block;
+  width:fit-content;
+  margin:30px auto;
+
+  font-size:32px;
+  font-weight:bold;
 }
 
 .special-button:hover{
@@ -141,19 +150,23 @@
     .button:hover {
       background: #2563eb;
     }
-    .special-button{
+   .special-button{
   background: linear-gradient(
     135deg,
-    #f59e0b,
-    #fbbf24
+    #ff4fd8,
+    #a855f7
   );
 
   color:white;
 
-  box-shadow:
-    0 0 20px rgba(245,158,11,0.7);
+  font-size:28px;
 
-  font-size:22px;
+  padding:20px 40px;
+
+  border-radius:20px;
+
+  box-shadow:
+    0 0 30px rgba(168,85,247,0.8);
 }
 
 .pulse{
@@ -188,8 +201,9 @@
   <header>
     <h1>ようこそソウマの遊び場へ～～‼</h1>
     <a href="thanks.html" class="button special-button pulse">
-    💜 私が一番伝えたいこと 💜
-    <p>AWS Cloud Practitioner 勉強中
+    💜 GANGPARADEへ 💜
+       </a>
+    <p>AWS Cloud Practitioner 勉強中</p>
     <p>各項目は下にあります </p>
   </header>
 
@@ -236,11 +250,5 @@
     ソウマの自己紹介サイト
   </footer>
 
-<div class="menu">
-  <a href="favorite.html" class="button">好きなもの紹介</a>
-  <a href="member.html" class="button">推しグループ紹介</a>
-  <a href="idol.html" class="button">推し紹介はこちら‼</a>
-  <a href="history.html" class="button">推し活遍歴</a>
-</div>
 </body>
 </html>
