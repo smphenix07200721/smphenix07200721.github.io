@@ -34,6 +34,8 @@
     0 0 40px #7e22ce;
 
   letter-spacing: 3px;
+
+  animation:titleGlow 4s infinite;
 }
 
     h2 {
@@ -113,16 +115,80 @@
 .special-button:hover{
   background:#d97706;
 }
-    
+
+    @keyframes titleGlow{
+
+  0%{
+    text-shadow:
+      0 0 10px #c084fc,
+      0 0 25px #a855f7;
+  }
+
+  50%{
+    text-shadow:
+      0 0 25px #ffffff,
+      0 0 60px #c084fc,
+      0 0 100px #a855f7;
+  }
+
+  100%{
+    text-shadow:
+      0 0 10px #c084fc,
+      0 0 25px #a855f7;
+  }
+
+}
     .button:hover {
       background: #2563eb;
     }
+    .special-button{
+  background: linear-gradient(
+    135deg,
+    #f59e0b,
+    #fbbf24
+  );
+
+  color:white;
+
+  box-shadow:
+    0 0 20px rgba(245,158,11,0.7);
+
+  font-size:22px;
+}
+
+.pulse{
+  animation:pulseGlow 2s infinite;
+}
+
+@keyframes pulseGlow{
+
+  0%{
+    transform:scale(1);
+    box-shadow:
+      0 0 15px rgba(245,158,11,0.5);
+  }
+
+  50%{
+    transform:scale(1.05);
+    box-shadow:
+      0 0 40px rgba(245,158,11,1);
+  }
+
+  100%{
+    transform:scale(1);
+    box-shadow:
+      0 0 15px rgba(245,158,11,0.5);
+  }
+
+}
   </style>
 </head>
 <body>
 
   <header>
     <h1>ようこそソウマの遊び場へ～～‼</h1>
+    <a href="thanks.html" class="button special-button pulse">
+    💜 私が一番伝えたいこと 💜
     <p>AWS Cloud Practitioner 勉強中
     <p>各項目は下にあります </p>
   </header>
@@ -171,9 +237,6 @@
   </footer>
 
 <div class="menu">
-<a href="thanks.html" class="button special-button">
-  私が一番伝えたいこと
-</a>
   <a href="favorite.html" class="button">好きなもの紹介</a>
   <a href="member.html" class="button">推しグループ紹介</a>
   <a href="idol.html" class="button">推し紹介はこちら‼</a>
